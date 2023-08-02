@@ -1,0 +1,44 @@
+.container {
+  max-width: 1390px;
+  margin: 0 auto;
+  padding: 0 72px; /* Уменьшаем отступ с 90px на 72px (20% от 90px) */
+}
+
+.list {
+  width: 634px;
+  height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 0; /* Удаляем "px", так как это неправильное значение */
+}
+
+.text {
+  height: 2.9352px; /* Уменьшаем высоту с 3.669px на 2.9352px (20% от 3.669px) */
+  color: #666;
+  font-family: Lato;
+  font-size: 16px; /* Уменьшаем размер шрифта с 20px на 16px (20% от 20px) */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* Увеличиваем межстрочное расстояние с 100% на 120% */
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+.container {
+  padding: 0 8px; /* Уменьшаем отступ с 10px на 8px (20% от 10px) */
+}
+
+.list {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.text {
+  font-size: 12.8px; /* Уменьшаем размер шрифта с 16px на 12.8px (20% от 16px) */
+  line-height: 120%;
+  padding: 4px; /* Уменьшаем отступ с 5px на 4px (20% от 5px) */
+}
+}

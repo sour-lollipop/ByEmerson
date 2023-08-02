@@ -1,0 +1,67 @@
+.popup-container {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  @media (max-width: 840px) {
+    width: 100%;
+    height:100%;
+  
+  }
+}
+
+.popup-content {
+  width: 800px; /* Reduce the width by 20% */
+  height: 560px; /* Reduce the height by 20% */
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  @media (max-width: 840px) {
+    width: 50%;
+    height:50%;
+  }
+}
+
+.new-container {
+  width: 720px; /* Reduce the width by 20% */
+  height: 456px; /* Reduce the height by 20% */
+  background: #F7F8FC;
+  @media (max-width: 840px) {
+    width: 50%;
+    height:50%;
+  img{
+    width: 50px;
+    height:50px;
+  }
+  }
+}
+
+.close-button {
+  position: absolute;
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.copy-button {
+  width: 38px;
+  height: 38.96px;
+  fill: #FF0303;
+  cursor: pointer;
+  position: absolute;
+  margin-bottom: 630px;
+  right: 416px; /* Adjust the position if needed */
+}
