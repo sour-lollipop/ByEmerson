@@ -10,30 +10,35 @@ import Introduct from "./components/Introduct/Introduct";
 import Tours from "./components/Tours/Tours";
 function App() {
   return (
-    <Container>
-      <Banner>
-        <Header />
-        <ProfComponent />
-        <BigPhoto/> 
-        <SearchForm />
-      </Banner>
-      <Projects />
-      <Tours/>
-      <Introduct />
-      <PartnersGallery/>
-      <LightColor>
-        <Footer />
-      </LightColor>
-    </Container>
+    <>
+      <Container>
+        <Banner>
+          <Header />
+          <ProfComponent />
+          <BigPhoto />
+          <SearchForm />
+        </Banner>
+        <Projects />
+        <Tours />
+        <Introduct />
+        <PartnersGallery />
+        {/* <LightColor>
+      </LightColor> */}
+      </Container>
+      <Footer />
+    </>
   );
 }
 
 export default App;
 
-const Container = styled.div``;
+const Container = styled.div`
+margin: 0 auto;
+`;
 const Banner = styled.div`
   // background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
   // height: 200vh;
+  margin: 0 auto;
   @media (max-width: 640px) {
     // height: 100%;
     margin-bottom: 20rem;

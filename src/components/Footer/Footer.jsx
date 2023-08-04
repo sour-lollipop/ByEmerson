@@ -10,6 +10,8 @@ import MapComponent from "./MapComponent";
 function PartnersGallery() {
   return (
     <Container className='container5' id="GalleryOfPartners">
+      <Wrapper>
+
       <Bline/>
         <Bloks>
 
@@ -54,19 +56,23 @@ function PartnersGallery() {
         </Bloks>
         <Line/>
       <h4>© 2023 BY EMERSON.All Right Reserved</h4>
+      </Wrapper>
     </Container>
   );
 }
 
 export default PartnersGallery;
+const Wrapper = styled.div`
+max-width: 1280px;
+margin: 0 auto;
+justify-items: center;
+display: flex;
+flex-direction:column;
+`
+
 const Container = styled.div`
-  width: 80%;
-  max-width: 1280px;
-  margin: 0 auto;
-  justify-items: center;
-  display: flex;
-  flex-direction:column;
-  background-color:#F4EAE5;
+width: 100%;
+background-color:#F4EAE5;
     h4 {
       color: #666;
       font-family: Lato;

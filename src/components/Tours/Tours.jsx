@@ -215,7 +215,7 @@ const toursData = [
     rating: '4.9',
     duration: '7-дневный тур',
     price: '42000 тг',
-    category:'Popular',
+    category:'Sale',
   },
   {
     image: promoImg1,
@@ -223,7 +223,7 @@ const toursData = [
     rating: '4.9',
     duration: '7-дневный тур',
     price: '42000 тг',
-    category:'Recommended',
+    category:'Sale',
   },
   {
     image: promoImg1,
@@ -247,7 +247,7 @@ const toursData = [
     rating: '4.9',
     duration: '7-дневный тур',
     price: '42000 тг',
-    category:'Popular',
+    category:'Sale',
   },
   {
     image: promoImg1,
@@ -255,7 +255,7 @@ const toursData = [
     rating: '4.9',
     duration: '7-дневный тур',
     price: '42000 тг',
-    category:'Recommended',
+    category:'Sale',
   },
   {
     image: promoImg1,
@@ -263,7 +263,7 @@ const toursData = [
     rating: '4.9',
     duration: '7-дневный тур',
     price: '42000 тг',
-    category:'Recommended',
+    category:'Sale',
   },
   {
     image: promoImg1,
