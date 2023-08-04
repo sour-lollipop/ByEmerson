@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import "@fontsource/source-sans-pro"; // Defaults to weight 400
+import "@fontsource/source-sans-pro/400.css"; // Specify weight
+import "@fontsource/montserrat/400.css";
+import "@fontsource/lato/400.css";
 import ExampleImage from "./../../images/TourInfo/photo_5240157656910515385_x.jpg";
 import ExampleImage1 from "./../../images/TourInfo/photo_5240025633910802575_y.jpg";
 import ExampleImage2 from "./../../images/TourInfo/photo_5240025633910802574_y.jpg";
@@ -24,12 +28,35 @@ const Popup = (props) => {
     <PopupContainer>
       <PopupContent>
         <Container>
-          <MainContent>
-            <img
+          <ImageContent>
+          <img
+              className="img1"
               src={image}
               alt="Пример"
-              style={{ width: "358.4px", height: "326.4px" }}
             />
+            <SwitchImages>
+            <img 
+              className="img2"
+              src={ExampleImage1}
+              alt="Картинка 2"
+              onClick={() => handleImageClick(ExampleImage1)}
+            />
+            <img
+              className="img2"
+              src={ExampleImage2}
+              alt="Картинка 3"
+              onClick={() => handleImageClick(ExampleImage2)}
+            />
+            <img
+              className="img2"
+              src={ExampleImage3}
+              alt="Картинка 4"
+              onClick={() => handleImageClick(ExampleImage3)}
+            />
+          </SwitchImages>
+          </ImageContent>
+          <MainContent>
+            
             <Wrapper>
               <LocationName>asdasd{location}</LocationName>
               <GeoLocationName>
@@ -62,40 +89,7 @@ const Popup = (props) => {
 							</ReservationButton>
             </Wrapper>
           </MainContent>
-          <SwitchImages>
-            <img
-              src={ExampleImage1}
-              alt="Картинка 2"
-              style={{
-                width: "116.8px",
-                height: "77.6px",
-                cursor: "pointer",
-              }}
-              onClick={() => handleImageClick(ExampleImage1)}
-            />
-            <img
-              src={ExampleImage2}
-              alt="Картинка 3"
-              style={{
-                width: "116.8px",
-                height: "77.6px",
-                marginLeft: "4px",
-                cursor: "pointer",
-              }}
-              onClick={() => handleImageClick(ExampleImage2)}
-            />
-            <img
-              src={ExampleImage3}
-              alt="Картинка 4"
-              style={{
-                width: "116.8px",
-                height: "77.6px",
-                marginLeft: "4px",
-                cursor: "pointer",
-              }}
-              onClick={() => handleImageClick(ExampleImage3)}
-            />
-          </SwitchImages>
+          
         </Container>
 				<CloseButton>
 				<img src={closeicon} width={38} height={38} alt="close-icon" onClick={onClose}/>
@@ -135,8 +129,8 @@ const PopupContent = styled.div`
   align-items: center;
   position: relative;
   @media (max-width: 840px) {
-    width: 50%;
-    height: 50%;
+    width: 90%;
+    height: 90%;
   }
 `;
 
@@ -144,29 +138,63 @@ const Container = styled.div`
   width: 720px; /* Reduce the width by 20% */
   height: 456px; /* Reduce the height by 20% */
   background: #f7f8fc;
+  display: flex;
   @media (max-width: 840px) {
-    width: 50%;
-    height: 50%;
-    img {
-      width: 50px;
-      height: 50px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+`;
+const ImageContent = styled.div`
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  .img1{
+    width: 358.4px;
+    height: 326.4px;
+  }
+  .img2{
+    width: 116.8px;
+    height: 77.6px;
+    cursor: pointer;
+  }
+  @media (max-width: 840px) {
+    .img1{
+      width: 280px;
+      height: 170px;
+    }
+    .img2{
+      width: 90.8px;
+      height: 60.6px;
+      cursor: pointer;
     }
   }
+`;
+const SwitchImages = styled.div`
+  margin-top: 14px;
+  display: flex;
+  flex-direction: row;
 `;
 
 const MainContent = styled.div`
   display: flex;
   align-items: flex-start;
+  flex-direction: column;  
+  justify-content:center;
 `;
 
 const Wrapper = styled.div`
   margin-left: 24px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;  
+  @media (max-width: 840px){
+    margin-left: 24px;
+    margin-top: 10px;
+  }
 `;
 
-const SwitchImages = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
+
 
 const LocationName = styled.p`
   color: "#222";
@@ -210,6 +238,7 @@ const Duration = styled.p`
   font-weight: 600;
   line-height: normal;
   margin-top: 4px;
+
 `;
 
 const Description = styled.p`
@@ -221,7 +250,6 @@ const Description = styled.p`
 	font-weight: 400;
 	line-height: 180%;
 	margin-top: 16px;
-
 	h1 { 
 		color: #666;
 		font-family: "Lato";
@@ -230,6 +258,12 @@ const Description = styled.p`
 		font-weight: 800;
 		line-height: 100%;
 		margin-top: 16px;
+    text-align: start;
+	}
+  @media (max-width: 840px) { 
+    width: 250px;
+    margin-top:  0;
+
 	}
 `;
 
@@ -262,4 +296,8 @@ display: flex;
 align-items: center;
 justify-content: center;
 cursor: pointer;
+@media (max-width: 840px) { 
+  top:  -15px;
+  right: -15px;
+}
 `
