@@ -199,7 +199,7 @@ const toursData = [
     image2: "https://static.gotur.kz/img/h/big/102/20365_3_d572dc7d.jpg",
     image3: "https://static.gotur.kz/img/h/big/102/20365_1_091b7bee.jpg",
     image4: "https://static.gotur.kz/img/h/big/102/20365_3_ba1a96ff.jpg",
-    name:'CLUB PRIVE BY RIXOS',
+    name:'CLUB PRIVE',
     description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
@@ -212,7 +212,7 @@ const toursData = [
     image2: "https://static.gotur.kz/img/h/big/424/84726_13_a45a4a6a.jpg",
     image3: "https://static.gotur.kz/img/h/big/424/84726_15_05278e33.jpg",
     image4: "https://static.gotur.kz/img/h/big/424/84726_12_aae8206f.jpg",
-    name:'CLUB ARONA BY LAREN',
+    name:'CLUB ARONA',
     description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
@@ -251,7 +251,7 @@ const toursData = [
     image2: "https://kompastour.com/useruploads/hotels/hotel_7e59ce1d21.jpg",
     image3: "https://kompastour.com/useruploads/hotels/hotel_3f968eb072.jpg",
     image4: "https://kompastour.com/useruploads/hotels/hotel_200652ec8a.jpg",
-    name:'Nakai Alimatha Aquatic',
+    name:'Nakai Alimatha',
     description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
