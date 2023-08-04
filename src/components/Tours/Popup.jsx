@@ -11,10 +11,23 @@ import ExampleImage3 from "./../../images/TourInfo/photo_5240157656910515385_x.j
 import geoicon from "./../../images/popup/geo-icon.svg";
 import staricon from "./../../images/popup/star-icon.svg";
 import closeicon from "./../../images/popup/close-icon.svg";
-const Popup = (props) => {
-  const { image, location, rating, duration, price, onClick, onClose } = props;
-  const [currentImage, setCurrentImage] = useState(ExampleImage);
+import { FaWhatsapp, FaInstagram, FaTelegramPlane   } from "react-icons/fa"
 
+const Popup = (props) => {
+  const { image, location, rating, duration, price, onClick, onClose, name,image2,image3,image4,category,description } = props;
+  const [currentImage, setCurrentImage] = useState(ExampleImage);
+  const [activeDown, setActiveDown] = useState(true); 
+
+  const dropDown = () => {
+    if (activeDown){
+        setActiveDown(false);
+        console.log(activeDown);
+    }
+    else{
+        setActiveDown(true);
+        console.log(activeDown);
+    }
+    };
   const handleImageClick = (image) => {
     setCurrentImage(image);
   };
@@ -37,19 +50,19 @@ const Popup = (props) => {
             <SwitchImages>
             <img 
               className="img2"
-              src={ExampleImage1}
+              src={image2}
               alt="Картинка 2"
               onClick={() => handleImageClick(ExampleImage1)}
             />
             <img
               className="img2"
-              src={ExampleImage2}
+              src={image3}
               alt="Картинка 3"
               onClick={() => handleImageClick(ExampleImage2)}
             />
             <img
               className="img2"
-              src={ExampleImage3}
+              src={image4}
               alt="Картинка 4"
               onClick={() => handleImageClick(ExampleImage3)}
             />
@@ -58,7 +71,7 @@ const Popup = (props) => {
           <MainContent>
             
             <Wrapper>
-              <LocationName>asdasd{location}</LocationName>
+              <LocationName>{name}</LocationName>
               <GeoLocationName>
                 <img
                   src={geoicon}
@@ -71,7 +84,7 @@ const Popup = (props) => {
                     marginRight: "4px",
                   }}
                 />
-                addaad {location}
+                {location}
               </GeoLocationName>
               <Rating>
                 <img src={staricon} alt="star" />
@@ -80,13 +93,23 @@ const Popup = (props) => {
               <Duration>Длительность: {duration}</Duration>
               <Description>
                 <h1>ОПИСАНИЕ</h1>
-                Мы являемся крупнейшим поставщиком праздничных услуг в мире с
-                партнерами и местами, разбросанными по всему миру, уделяя
-                приоритетное внимание обслуживанию и удовлетворенности клиентов.
+                {description}
               </Description>
-							<ReservationButton onClick={showAlert}>
+              {activeDown === true ? (
+							<ReservationButton onClick={dropDown}>
 								Забронировать сейчас
 							</ReservationButton>
+              )
+              :  
+              (
+              <ChooseButton>
+                <h3>Выберите предпочитаемый способ связи </h3>
+                <IconsColumn>
+                  <a><FaWhatsapp size={40} color="green"/></a>
+                  <a><FaTelegramPlane size={40} color="blue"/></a>
+                  </IconsColumn>
+              </ChooseButton>)
+                }
             </Wrapper>
           </MainContent>
           
@@ -208,7 +231,7 @@ const LocationName = styled.p`
 `;
 
 const GeoLocationName = styled.p`
-  width: 158.4px;
+  // width: 158.4px;
   height: 24.8px;
   color: #ff0303;
   font-family: "Lato";
@@ -282,8 +305,31 @@ const ReservationButton = styled.button`
 	font-weight: 800;
 	line-height: 100%;
 	cursor: pointer;
+  border:none;
 `
+const ChooseButton = styled.div`
+	width: 232px;
+	height: 42.4px;
+	display: flex;
+  flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 24px;
+	font-family: "Lato";
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 100%;
+	cursor: pointer;
+  border:none;
+`
+const IconsColumn = styled.div`
+margin-top:10px;
+display: flex;
+width: 100%;
+justify-content: space-around;
 
+`
 const CloseButton = styled.button`
 position: absolute;
 width: 38px;

@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState }  from 'react'
 import styled from 'styled-components';
 
 const Card = (props) => {
-    const { image, location, rating, duration, price, onClick } = props;
+    const { name,image, location, rating, duration, price, onClick } = props;
+    
     const handleCardClick = () => {
         onClick(); // Вызовите переданный обработчик клика из родительского компонента
       };
+    
   return (
     <Container onClick={handleCardClick}>
         <img src={image} alt={image} />
@@ -41,7 +43,7 @@ const Card = (props) => {
                 <p className="text2">{rating}</p> 
             </MiniBlock>
         </FirstLine>
-        <p className="text3" >{location}</p> 
+        <p className="text3" >{name}</p> 
         <p className="text4" >{duration}</p>
         <p className="text5" >{price}</p> 
     </Container>

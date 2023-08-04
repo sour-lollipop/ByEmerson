@@ -46,6 +46,7 @@ function Tours() {
             {toursData.slice(0, visibleCards).map((tour, index)=>(
               tour.category === stateCategory ? 
                 (<Card key={index}
+                  name={tour.name}
                   image={tour.image}
                   location={tour.location}
                   rating={tour.rating}
@@ -81,6 +82,12 @@ function Tours() {
           rating={toursData[selectedTourIndex].rating}
           duration={toursData[selectedTourIndex].duration}
           price={toursData[selectedTourIndex].price}
+          name={toursData[selectedTourIndex].name}
+          description={toursData[selectedTourIndex].description}
+          image2={toursData[selectedTourIndex].image2}
+          image3={toursData[selectedTourIndex].image3}
+          image4={toursData[selectedTourIndex].image4}
+          category={toursData[selectedTourIndex].category}
           />
         // <div className="popup">
         //   <img src={toursData[selectedTourIndex].image} alt="Tour" />
@@ -170,12 +177,17 @@ const ButtonBlock = styled.div`
 `;
 const toursData = [
   {
-    image: promoImg1,
-    location: 'Казахстан',
+    image: "https://static.gotur.kz/img/h/big/23/44921.jpg",
+    location: 'Турция, Кемер',
     rating: '4.7',
-    duration: '2-дневный тур',
-    price: '25000 тг',
+    duration: '5-дневный тур',
+    price: '514 617 ₸',
     category:'Sale',
+    image2: "https://static.gotur.kz/img/h/big/23/44926.jpg",
+    image3: "https://static.gotur.kz/img/h/big/23/44921.jpg",
+    image4: "https://static.gotur.kz/img/h/big/23/449234.jpg",
+    name:'AGON HOTEL',
+    description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
     image: promoImg1,
@@ -184,6 +196,11 @@ const toursData = [
     duration: '3-дневный тур',
     price: '28000 тг',
     category:'Popular',
+    image2: "https://static.gotur.kz/img/h/big/23/44926.jpg",
+    image3: "https://static.gotur.kz/img/h/big/23/44921.jpg",
+    image4: "https://static.gotur.kz/img/h/big/23/449234.jpg",
+    name:'AGON HOTEL',
+    description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
     image: promoImg1,
@@ -192,6 +209,11 @@ const toursData = [
     duration: '5-дневный тур',
     price: '35000 тг',
     category:'Recommended',
+    image2: "https://static.gotur.kz/img/h/big/23/44926.jpg",
+    image3: "https://static.gotur.kz/img/h/big/23/44921.jpg",
+    image4: "https://static.gotur.kz/img/h/big/23/449234.jpg",
+    name:'AGON HOTEL',
+    description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
     image: promoImg1,
@@ -200,6 +222,11 @@ const toursData = [
     duration: '7-дневный тур',
     price: '42000 тг',
     category:'The best price',
+    image2: "https://static.gotur.kz/img/h/big/23/44926.jpg",
+    image3: "https://static.gotur.kz/img/h/big/23/44921.jpg",
+    image4: "https://static.gotur.kz/img/h/big/23/449234.jpg",
+    name:'AGON HOTEL',
+    description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
     image: promoImg1,
@@ -208,6 +235,11 @@ const toursData = [
     duration: '7-дневный тур',
     price: '42000 тг',
     category:'Sale',
+    image2: "https://static.gotur.kz/img/h/big/23/44926.jpg",
+    image3: "https://static.gotur.kz/img/h/big/23/44921.jpg",
+    image4: "https://static.gotur.kz/img/h/big/23/449234.jpg",
+    name:'AGON HOTEL',
+    description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
     image: promoImg1,
@@ -216,6 +248,11 @@ const toursData = [
     duration: '7-дневный тур',
     price: '42000 тг',
     category:'Sale',
+    image2: "https://static.gotur.kz/img/h/big/23/44926.jpg",
+    image3: "https://static.gotur.kz/img/h/big/23/44921.jpg",
+    image4: "https://static.gotur.kz/img/h/big/23/449234.jpg",
+    name:'AGON HOTEL',
+    description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
     image: promoImg1,
@@ -224,6 +261,11 @@ const toursData = [
     duration: '7-дневный тур',
     price: '42000 тг',
     category:'Sale',
+    image2: "https://static.gotur.kz/img/h/big/23/44926.jpg",
+    image3: "https://static.gotur.kz/img/h/big/23/44921.jpg",
+    image4: "https://static.gotur.kz/img/h/big/23/449234.jpg",
+    name:'AGON HOTEL',
+    description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
     image: promoImg1,
@@ -232,6 +274,11 @@ const toursData = [
     duration: '7-дневный тур',
     price: '42000 тг',
     category:'The best price',
+    image2: "https://static.gotur.kz/img/h/big/23/44926.jpg",
+    image3: "https://static.gotur.kz/img/h/big/23/44921.jpg",
+    image4: "https://static.gotur.kz/img/h/big/23/449234.jpg",
+    name:'AGON HOTEL',
+    description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
     image: promoImg1,
@@ -240,6 +287,11 @@ const toursData = [
     duration: '7-дневный тур',
     price: '42000 тг',
     category:'Sale',
+    image2: "https://static.gotur.kz/img/h/big/23/44926.jpg",
+    image3: "https://static.gotur.kz/img/h/big/23/44921.jpg",
+    image4: "https://static.gotur.kz/img/h/big/23/449234.jpg",
+    name:'AGON HOTEL',
+    description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
     image: promoImg1,
@@ -248,6 +300,11 @@ const toursData = [
     duration: '7-дневный тур',
     price: '42000 тг',
     category:'Sale',
+    image2: "https://static.gotur.kz/img/h/big/23/44926.jpg",
+    image3: "https://static.gotur.kz/img/h/big/23/44921.jpg",
+    image4: "https://static.gotur.kz/img/h/big/23/449234.jpg",
+    name:'AGON HOTEL',
+    description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
     image: promoImg1,
@@ -256,6 +313,11 @@ const toursData = [
     duration: '7-дневный тур',
     price: '42000 тг',
     category:'Sale',
+    image2: "https://static.gotur.kz/img/h/big/23/44926.jpg",
+    image3: "https://static.gotur.kz/img/h/big/23/44921.jpg",
+    image4: "https://static.gotur.kz/img/h/big/23/449234.jpg",
+    name:'AGON HOTEL',
+    description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
     image: promoImg1,
@@ -264,6 +326,11 @@ const toursData = [
     duration: '7-дневный тур',
     price: '42000 тг',
     category:'Sale',
+    image2: "https://static.gotur.kz/img/h/big/23/44926.jpg",
+    image3: "https://static.gotur.kz/img/h/big/23/44921.jpg",
+    image4: "https://static.gotur.kz/img/h/big/23/449234.jpg",
+    name:'AGON HOTEL',
+    description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
     image: promoImg1,
@@ -272,6 +339,11 @@ const toursData = [
     duration: '7-дневный тур',
     price: '42000 тг',
     category:'Sale',
+    image2: "https://static.gotur.kz/img/h/big/23/44926.jpg",
+    image3: "https://static.gotur.kz/img/h/big/23/44921.jpg",
+    image4: "https://static.gotur.kz/img/h/big/23/449234.jpg",
+    name:'AGON HOTEL',
+    description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
     image: promoImg1,
@@ -280,6 +352,11 @@ const toursData = [
     duration: '7-дневный тур',
     price: '42000 тг',
     category:'Popular',
+    image2: "https://static.gotur.kz/img/h/big/23/44926.jpg",
+    image3: "https://static.gotur.kz/img/h/big/23/44921.jpg",
+    image4: "https://static.gotur.kz/img/h/big/23/449234.jpg",
+    name:'AGON HOTEL',
+    description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
     image: promoImg1,
@@ -288,6 +365,11 @@ const toursData = [
     duration: '7-дневный тур',
     price: '42000 тг',
     category:'Recommended',
+    image2: "https://static.gotur.kz/img/h/big/23/44926.jpg",
+    image3: "https://static.gotur.kz/img/h/big/23/44921.jpg",
+    image4: "https://static.gotur.kz/img/h/big/23/449234.jpg",
+    name:'AGON HOTEL',
+    description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
     image: promoImg1,
@@ -296,5 +378,10 @@ const toursData = [
     duration: '7-дневный тур',
     price: '42000 тг',
     category:'The best price',
+    image2: "https://static.gotur.kz/img/h/big/23/44926.jpg",
+    image3: "https://static.gotur.kz/img/h/big/23/44921.jpg",
+    image4: "https://static.gotur.kz/img/h/big/23/449234.jpg",
+    name:'AGON HOTEL',
+    description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
 ];
