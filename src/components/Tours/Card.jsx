@@ -62,7 +62,7 @@ const Container = styled.div`
 
     .text3 {
         font-family: Montserrat;
-        font-size: 12px; /* Reduce font size by 20% */
+        font-size: 14px; /* Reduce font size by 20% */
         font-style: normal;
         font-weight: 400;
         color: #222;
@@ -70,6 +70,11 @@ const Container = styled.div`
         padding: 0 10px;
 
       }
+      @media (max-width: 840px) {
+     .text3 {
+     font-size: 12px;
+     }
+  }
       .text4 {
         font-family: Lato;
         font-size: 10px; /* Reduce font size by 20% */
@@ -94,6 +99,9 @@ const Container = styled.div`
         margin-bottom:20px;
         padding: 0 10px;
       }
+      .text5 {
+     font-size: 18px;
+     }
     img{
         width: 100%;
         height: 231.2px;
