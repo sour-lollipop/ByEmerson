@@ -59,17 +59,6 @@ const Select_categories = styled.div`
     grid-template-columns: auto auto auto auto;
     align-items: center;
     justify-items: center;
-    // div{
-    //     color: #666;
-    //     font-family: Lato;
-    //     font-size: 16px; /* Уменьшаем размер шрифта с 20px на 16px (20% от 20px) */
-    //     font-style: normal;
-    //     font-weight: 400;
-    //     line-height: 120%;
-    //     height:25px;
-    //     width:100%;
-    //     text-align: center;
-    // }
     span{text-align: center;
         a{  color: #666;
             
