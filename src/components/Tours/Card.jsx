@@ -62,7 +62,7 @@ const Container = styled.div`
 
     .text3 {
         font-family: Montserrat;
-        font-size: 18px; /* Reduce font size by 20% */
+        font-size: 12px; /* Reduce font size by 20% */
         font-style: normal;
         font-weight: 400;
         color: #222;
@@ -85,7 +85,7 @@ const Container = styled.div`
       
       .text5 {
         font-family: Montserrat;
-        font-size: 24px; /* Reduce font size by 20% */
+        font-size: 22px; /* Reduce font size by 20% */
         font-style: normal;
         font-weight: 400;
         line-height: 100%;
