@@ -92,7 +92,7 @@ const Popup = (props) => {
               </Rating>
               <Duration>Длительность: {duration}</Duration>
               <Description>
-                <h1>ОПИСАНИЕ</h1>
+                <h3>ОПИСАНИЕ</h3>
                 {description}
               </Description>
               {activeDown === true ? (
