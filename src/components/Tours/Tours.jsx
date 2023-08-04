@@ -8,7 +8,7 @@ import List from "./List";
 import Categories from './Categories';
 
 function Tours() {
-  const [visibleCards, setVisibleCards] = useState(8);
+  const [visibleCards, setVisibleCards] = useState(4);
   const [showAll, setShowAll] = useState(false); 
   const [selectedTourIndex, setSelectedTourIndex] = useState(null);
 
@@ -18,7 +18,7 @@ function Tours() {
   };
 
   const handleClose = () => {
-    setVisibleCards(8);
+    setVisibleCards(4);
     setShowAll(false);
   };
 
@@ -190,42 +190,42 @@ const toursData = [
     description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
-    image: promoImg1,
-    location: 'Россия',
-    rating: '4.5',
-    duration: '3-дневный тур',
-    price: '28000 тг',
-    category:'Popular',
-    image2: "https://static.gotur.kz/img/h/big/23/44926.jpg",
-    image3: "https://static.gotur.kz/img/h/big/23/44921.jpg",
-    image4: "https://static.gotur.kz/img/h/big/23/449234.jpg",
-    name:'AGON HOTEL',
+    image: "https://static.gotur.kz/img/h/big/102/20365_1_9194c9ec.jpg",
+    location: 'Турция, Белек',
+    rating: '5',
+    duration: '10-дневный тур',
+    price: '9 999 758₸',
+    category:'Sale',
+    image2: "https://static.gotur.kz/img/h/big/102/20365_3_d572dc7d.jpg",
+    image3: "https://static.gotur.kz/img/h/big/102/20365_1_091b7bee.jpg",
+    image4: "https://static.gotur.kz/img/h/big/102/20365_3_ba1a96ff.jpg",
+    name:'CLUB PRIVE BY RIXOS',
     description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
-    image: promoImg1,
-    location: 'Турция',
+    image: "https://static.gotur.kz/img/h/big/424/84726_5_ac11639d.jpg",
+    location: 'Турция, Белек',
     rating: '4.8',
-    duration: '5-дневный тур',
-    price: '35000 тг',
-    category:'Recommended',
-    image2: "https://static.gotur.kz/img/h/big/23/44926.jpg",
-    image3: "https://static.gotur.kz/img/h/big/23/44921.jpg",
-    image4: "https://static.gotur.kz/img/h/big/23/449234.jpg",
-    name:'AGON HOTEL',
+    duration: '7-дневный тур',
+    price: '7 084 744 ₸',
+    category:'Sale',
+    image2: "https://static.gotur.kz/img/h/big/424/84726_13_a45a4a6a.jpg",
+    image3: "https://static.gotur.kz/img/h/big/424/84726_15_05278e33.jpg",
+    image4: "https://static.gotur.kz/img/h/big/424/84726_12_aae8206f.jpg",
+    name:'CLUB ARONA BY LAREN',
     description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
-    image: promoImg1,
-    location: 'Италия',
+    image: "https://apigate-tui.fstravel.com/api/geocontent/static/Hotel/00170000-ac11-0242-e359-08d99481a5ce/MainPhoto-Source-irjnkdxf.jpg",
+    location: 'Италия,Милан',
     rating: '4.9',
     duration: '7-дневный тур',
-    price: '42000 тг',
-    category:'The best price',
-    image2: "https://static.gotur.kz/img/h/big/23/44926.jpg",
-    image3: "https://static.gotur.kz/img/h/big/23/44921.jpg",
-    image4: "https://static.gotur.kz/img/h/big/23/449234.jpg",
-    name:'AGON HOTEL',
+    price: '621 673 ₸',
+    category:'Sale',
+    image2: "https://apigate-tui.fstravel.com/api/geocontent/static/Hotel/00170000-ac11-0242-e359-08d99481a5ce/Gallery-Source-yq42efih.jpg",
+    image3: "https://apigate-tui.fstravel.com/api/geocontent/static/Hotel/00170000-ac11-0242-e359-08d99481a5ce/Gallery-Source-otnghutl.jpg",
+    image4: "https://apigate-tui.fstravel.com/api/geocontent/static/Hotel/00170000-ac11-0242-e359-08d99481a5ce/Gallery-Source-zhtdprtx.jpg",
+    name:'Best Western Madison',
     description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
@@ -233,7 +233,7 @@ const toursData = [
     location: 'Турция, Кемер',
     rating: '4.9',
     duration: '7-дневный тур',
-    price: '42000 тг',
+    price: '42000 ₸',
     category:'Sale',
     image2: "https://calypsotour.com/assets/components/phpthumbof/cache/592da8a88b80f.87c11df72b6a39f10243749497e9138a.jpg",
     image3: "https://calypsotour.com/assets/components/phpthumbof/cache/592da88a6b605.87c11df72b6a39f10243749497e9138a.jpg",
@@ -242,16 +242,16 @@ const toursData = [
     description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
-    image: promoImg1,
-    location: 'Корея',
+    image: "https://kompastour.com/useruploads/hotels/hotel_8770f4a7c7.jpg",
+    location: 'Thinadhoo, Maldives',
     rating: '4.9',
     duration: '7-дневный тур',
-    price: '42000 тг',
+    price: '1736550 ₸',
     category:'Sale',
-    image2: "https://static.gotur.kz/img/h/big/23/44926.jpg",
-    image3: "https://static.gotur.kz/img/h/big/23/44921.jpg",
-    image4: "https://static.gotur.kz/img/h/big/23/449234.jpg",
-    name:'AGON HOTEL',
+    image2: "https://kompastour.com/useruploads/hotels/hotel_7e59ce1d21.jpg",
+    image3: "https://kompastour.com/useruploads/hotels/hotel_3f968eb072.jpg",
+    image4: "https://kompastour.com/useruploads/hotels/hotel_200652ec8a.jpg",
+    name:'Nakai Alimatha Aquatic',
     description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
@@ -259,7 +259,7 @@ const toursData = [
     location: 'Франция',
     rating: '4.9',
     duration: '7-дневный тур',
-    price: '42000 тг',
+    price: '42000 ₸',
     category:'Sale',
     image2: "https://static.gotur.kz/img/h/big/23/44926.jpg",
     image3: "https://static.gotur.kz/img/h/big/23/44921.jpg",
