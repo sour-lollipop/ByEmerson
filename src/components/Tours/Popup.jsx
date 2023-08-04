@@ -15,7 +15,7 @@ import { FaWhatsapp, FaInstagram, FaTelegramPlane   } from "react-icons/fa"
 
 const Popup = (props) => {
   const { image, location, rating, duration, price, onClick, onClose, name,image2,image3,image4,category,description } = props;
-  const [currentImage, setCurrentImage] = useState(ExampleImage);
+  const [currentImage, setCurrentImage] = useState(image);
   const [activeDown, setActiveDown] = useState(true); 
 
   const dropDown = () => {
@@ -44,7 +44,7 @@ const Popup = (props) => {
           <ImageContent>
           <img
               className="img1"
-              src={image}
+              src={currentImage}
               alt="Пример"
             />
             <SwitchImages>
@@ -52,19 +52,19 @@ const Popup = (props) => {
               className="img2"
               src={image2}
               alt="Картинка 2"
-              onClick={() => handleImageClick(ExampleImage1)}
+              onClick={() => handleImageClick(image2)}
             />
             <img
               className="img2"
               src={image3}
               alt="Картинка 3"
-              onClick={() => handleImageClick(ExampleImage2)}
+              onClick={() => handleImageClick(image3)}
             />
             <img
               className="img2"
               src={image4}
               alt="Картинка 4"
-              onClick={() => handleImageClick(ExampleImage3)}
+              onClick={() => handleImageClick(image4)}
             />
           </SwitchImages>
           </ImageContent>
