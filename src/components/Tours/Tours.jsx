@@ -35,7 +35,7 @@ function Tours() {
     console.log(stateCategory);
   };
   return (
-    <Container className='container5' id="GalleryOfPartners">
+    <Container className='container5' id="project">
       <Slide direction='left'>
       <h1><span className="red">Лучшее место</span> для отдыха</h1>
       {/* <List/> */}
