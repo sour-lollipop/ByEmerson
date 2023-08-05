@@ -16,11 +16,11 @@ const Header = () => {
                 <h1>TOO By Emerson</h1>
             </Logo>
             <Nav bar={bar}>
-                <span><a href="#home">ГЛАВНАЯ</a></span>
-                <span><a href="#discont">АКЦИИ</a></span>
-                <span><a href="#project">ТУР ПАКЕТЫ</a></span>
-                <span><a href="#Introduct">О НАС</a></span>
-                <span><a href="#footer">КОНТАКТЫ</a></span>
+                <span><a href="#home" onClick={() => setBar(false)} >ГЛАВНАЯ</a></span>
+                <span><a href="#discont" onClick={() => setBar(false)} >АКЦИИ</a></span>
+                <span><a href="#project" onClick={() => setBar(false)} >ТУР ПАКЕТЫ</a></span>
+                <span><a href="#Introduct" onClick={() => setBar(false)} >О НАС</a></span>
+                <span><a href="#footer" onClick={() => setBar(false)} >КОНТАКТЫ</a></span>
                  <span >
                 <a href="#"><img src={logoImg1} alt='WhatsApp' style={{marginRight: '10px'}}/></a>
                 <a href="#"><img src={logoImg2} alt='Telegram' style={{marginRight: '10px'}}/></a>
