@@ -280,16 +280,16 @@ const toursData = [
   },
 
   {
-    image: "https://static.gotur.kz/img/h/big/424/84726_5_ac11639d.jpg",
-    location: 'Турция, Белек',
+    image: "https://calypsotour.com/assets/components/phpthumbof/cache/_f6abc1fc6aa4567ccffe48a0c7d8fc5c.8460d4698e85817fc114c945faac5d2b.jpg",
+    location: 'Тайланд',
     rating: '4.8',
     duration: '7-дневный тур',
-    price: '7 084 744 ₸',
+    price: '708 000 ₸',
     category:'Popular',
-    image2: "https://static.gotur.kz/img/h/big/424/84726_13_a45a4a6a.jpg",
-    image3: "https://static.gotur.kz/img/h/big/424/84726_15_05278e33.jpg",
-    image4: "https://static.gotur.kz/img/h/big/424/84726_12_aae8206f.jpg",
-    name:'CLUB ARONA',
+    image2: "https://calypsotour.com/assets/components/phpthumbof/cache/_e786b6668b9668943d5bb6457baff0d6.8460d4698e85817fc114c945faac5d2b.jpg",
+    image3: "https://calypsotour.com/assets/components/phpthumbof/cache/_967d95702b5a4ba998def08b27b147de.8460d4698e85817fc114c945faac5d2b.jpg",
+    image4: "https://calypsotour.com/assets/components/phpthumbof/cache/_cd4e76324172ed89538bff34ed29a387.8460d4698e85817fc114c945faac5d2b.jpg",
+    name:'JIRAPORN HILL',
     description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
   {
