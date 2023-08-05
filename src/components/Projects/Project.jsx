@@ -4,17 +4,17 @@ import styled from "styled-components";
 const Project = (props) => {
   const { img, disc } = props.item;
   return (
-    <Container className="project">
-      <img src={img} alt="project" />
+   <Container className="project">
+      <img src={image} alt="project" />
       <div className="sale">
         <p>Скидка 35%</p>
       </div>
       <div className="disc">
         <div className="name">
-          <h3>Description</h3>
+          <h3>{name}</h3>
         </div>
         <div className="price">
-          <p>400 000 T</p>
+          <p>{price}</p>
         </div>
       </div>
     </Container>
