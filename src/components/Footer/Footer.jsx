@@ -40,7 +40,7 @@ function PartnersGallery() {
               </span>
 
               <span>
-                <a "https://www.instagram.com/emerson_brand_/">
+                <a  href="https://www.instagram.com/emerson_brand_/">
                   <FaInstagram/>@By_Emerson
                 </a>
               </span>
