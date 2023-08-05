@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 const data = [
   {
-    image: "https://apigate-tui.fstravel.com/api/geocontent/static/Hotel/00170000-ac11-0242-83de-08d994244f01/MainPhoto-Source-gchf2eei.jpg",
+    image: "https://apigate-tui.fstravel.com/api/geocontent/static/Hotel/00170000-ac11-0242-83de-08d994244f01/Gallery-Source-vxv5hpug.jpg",
     location: 'Греция',
     rating: '3',
     duration: '7-дневный тур',
@@ -19,7 +19,7 @@ const data = [
     description:'Уютный отель в центре города с приятной, зеленой территорией и открытым бассейном. Развитая инфраструктура района сделает отдых разнообразным, благодаря разнообразию магазинов, клубов, баров и ресторанов.',
   },
   {
-    image: "https://apigate-tui.fstravel.com/api/geocontent/static/Hotel/000f0000-ac11-0242-ab57-08da02f21979/Gallery-Source-wyt4vqfj.jpg",
+    image: "https://apigate-tui.fstravel.com/api/geocontent/static/Hotel/000f0000-ac11-0242-ab57-08da02f21979/Gallery-Source-nbgk5wkn.jpg",
     location: 'Греция',
     rating: '3',
     duration: '7-дневный тур',
@@ -43,7 +43,7 @@ const data = [
     name:'Ausonia',
     description:'Уютный отель с собственным песчаным пляжем расположен всего в 30 метрах от моря. К услугам гостей отзывчивый персонал, комфортабельные номера и ресторан. На территории соседнего отеля находится открытый бассейн с водной горкой',
   },{
-    image: "https://apigate-tui.fstravel.com/api/geocontent/static/Hotel/00170000-ac11-0242-7c60-08d99481dbd1/MainPhoto-Source-bv2vs51w.jpg",
+    image: "https://apigate-tui.fstravel.com/api/geocontent/static/Hotel/00170000-ac11-0242-7c60-08d99481dbd1/Gallery-Source-mmkbebg3.jpg",
     location: 'Италия',
     rating: '4',
     duration: '7-дневный тур',
