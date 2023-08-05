@@ -4,24 +4,59 @@ import Project from './Project';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import styled from 'styled-components';
 
-let data = [
-    {
-        img : "https://lis.4dev.kz/public/ca71c208-9834-490d-908d-6d424355cff7",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
-    },
-    {
-        img : "https://lis.4dev.kz/public/dffda3d4-9b2e-4184-b9cd-fd54c44ad97d",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
-    },
-    {
-        img : "https://lis.4dev.kz/public/80625f38-a71d-4511-b50e-d31b15b5e90a",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
-    },
-    {
-        img : "https://lis.4dev.kz/public/ccf690ca-d602-4d00-a430-572bbecafb1c",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
-    }
-];
+const data = [
+  {
+    image: "https://static.gotur.kz/img/h/big/23/44921.jpg",
+    location: 'Турция',
+    rating: '4.7',
+    duration: '5-дневный тур',
+    price: '514 617 ₸',
+    category:'Sale',
+    image2: "https://static.gotur.kz/img/h/big/23/44926.jpg",
+    image3: "https://static.gotur.kz/img/h/big/23/44921.jpg",
+    image4: "https://static.gotur.kz/img/h/big/23/449234.jpg",
+    name:'AGON HOTEL',
+    description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
+  },
+  {
+    image: "https://static.gotur.kz/img/h/big/102/20365_1_9194c9ec.jpg",
+    location: 'Турция',
+    rating: '5',
+    duration: '10-дневный тур',
+    price: '9 999 758₸',
+    category:'Sale',
+    image2: "https://static.gotur.kz/img/h/big/102/20365_3_d572dc7d.jpg",
+    image3: "https://static.gotur.kz/img/h/big/102/20365_1_091b7bee.jpg",
+    image4: "https://static.gotur.kz/img/h/big/102/20365_3_ba1a96ff.jpg",
+    name:'CLUB PRIVE',
+    description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
+  },
+  {
+    image: "https://static.gotur.kz/img/h/big/424/84726_5_ac11639d.jpg",
+    location: 'Турция',
+    rating: '4.8',
+    duration: '7-дневный тур',
+    price: '7 084 744 ₸',
+    category:'Sale',
+    image2: "https://static.gotur.kz/img/h/big/424/84726_13_a45a4a6a.jpg",
+    image3: "https://static.gotur.kz/img/h/big/424/84726_15_05278e33.jpg",
+    image4: "https://static.gotur.kz/img/h/big/424/84726_12_aae8206f.jpg",
+    name:'CLUB ARONA',
+    description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
+  },{
+    image: "https://apigate-tui.fstravel.com/api/geocontent/static/Hotel/00170000-ac11-0242-e359-08d99481a5ce/MainPhoto-Source-irjnkdxf.jpg",
+    location: 'Италия',
+    rating: '4.9',
+    duration: '7-дневный тур',
+    price: '621 673 ₸',
+    category:'Sale',
+    image2: "https://apigate-tui.fstravel.com/api/geocontent/static/Hotel/00170000-ac11-0242-e359-08d99481a5ce/Gallery-Source-yq42efih.jpg",
+    image3: "https://apigate-tui.fstravel.com/api/geocontent/static/Hotel/00170000-ac11-0242-e359-08d99481a5ce/Gallery-Source-otnghutl.jpg",
+    image4: "https://apigate-tui.fstravel.com/api/geocontent/static/Hotel/00170000-ac11-0242-e359-08d99481a5ce/Gallery-Source-zhtdprtx.jpg",
+    name:'Best Western Madison',
+    description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
+  },
+]
 
 var settings = {
     className: "center",
