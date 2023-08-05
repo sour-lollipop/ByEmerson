@@ -23,13 +23,13 @@ function PartnersGallery() {
         <Blok >
               <span >
                 <a href="/" >
-                  <FiPhoneCall/> +7 777 777 77 77
+                  <FiPhoneCall/> +7 771 748 82 01
                 </a>
               </span>
 
               <span>
-                <a href="/">
-                  <FaWhatsapp/> +7 777 777 77 77
+                <a href="wa.me/77717488201">
+                  <FaWhatsapp/> +7 771 748 82 01
                 </a>
               </span>
 
@@ -40,7 +40,7 @@ function PartnersGallery() {
               </span>
 
               <span>
-                <a href="/">
+                <a "https://www.instagram.com/emerson_brand_/">
                   <FaInstagram/>@By_Emerson
                 </a>
               </span>
