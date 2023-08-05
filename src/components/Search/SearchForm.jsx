@@ -9,7 +9,7 @@ import { Slide } from "react-awesome-reveal";
 import { FaSearch  } from "react-icons/fa"
 import Tours from './Tours'
 const countries = ['Астана',"Алматы"]; // Здесь добавьте список стран
-const countries2 = ['Италия', 'Египет', 'Турция', 'Тайланд', 'Сейшелы',"Греция"]; // Здесь добавьте список стран
+const countries2 = ['Италия', 'Египет', 'Турция', 'Тайланд', 'Сейшелы',"Греция","Мальдивы","Маврикий","Черногория"]; // Здесь добавьте список стран
 
 const SearchForm = () => {
 
