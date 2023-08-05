@@ -19,9 +19,10 @@ function PartnersGallery() {
       <Slide direction="down">
         <Bloks>
           <img src="https://kompastour.com/img/logo.svg" alt="Фотография 1" className="photo-1" />
-          <img src="https://fstravel.kz/storage/images/logo.svg" alt="Фотография 2" className="photo-2" />
+          <img src="https://fstravel.kz/storage/images/logo.svg" alt="Фотография 2" className="photo2" />
           <img src="https://calypsotour.com/assets/basetheme-design/images/logo.png" alt="Фотография 3" className="photo-3" />
           <img src="https://www.gotur.kz/img/gt-logo-white.png" alt="Фотография 4" className="photo4" />
+          <img src="https://kazunion.com/templates/kazunion3/images/logo.png?6" alt="Фотография 4" className="photo5" />
       
         </Bloks>
       </Slide>
@@ -66,22 +67,29 @@ flex: 1;
 width: 100%;
 background-color:white;
 display: grid;
-grid-template-columns: 25% 25% 25% 25%;
+grid-template-columns: 20% 20% 20% 20% 20%;
 align-items: center;
 justify-items: center;
 margin-top:20px;
+.photo2{
+  width: 100px;
+
+}
 img{
   margin: 20px 0 ;
   max-width: 100%;
+  width: 200px;
   height: auto;
 }
 .photo4{
   background: #FC7158;
+  width: 200px;
+
 }
 @media (max-width: 840px) {
   img{
     margin: 20px 0 ;
-    max-width: 70%;
+    max-width: 80%;
     height: auto;
   }
 }
