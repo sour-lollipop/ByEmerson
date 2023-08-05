@@ -6,19 +6,6 @@ import styled from 'styled-components';
 
 const data = [
   {
-    image: "https://apigate-tui.fstravel.com/api/geocontent/static/Hotel/00170000-ac11-0242-e359-08d99481a5ce/MainPhoto-Source-irjnkdxf.jpg",
-    location: 'Италия,Милан',
-    rating: '4.9',
-    duration: '7-дневный тур',
-    price: '621 673 ₸',
-    category:'Sale',
-    image2: "https://apigate-tui.fstravel.com/api/geocontent/static/Hotel/00170000-ac11-0242-e359-08d99481a5ce/Gallery-Source-yq42efih.jpg",
-    image3: "https://apigate-tui.fstravel.com/api/geocontent/static/Hotel/00170000-ac11-0242-e359-08d99481a5ce/Gallery-Source-otnghutl.jpg",
-    image4: "https://apigate-tui.fstravel.com/api/geocontent/static/Hotel/00170000-ac11-0242-e359-08d99481a5ce/Gallery-Source-zhtdprtx.jpg",
-    name:'Best Western Madison',
-    description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
-  },
-  {
     image: "https://apigate-tui.fstravel.com/api/geocontent/static/Hotel/00170000-ac11-0242-83de-08d994244f01/MainPhoto-Source-gchf2eei.jpg",
     location: 'Греция',
     rating: '3',
