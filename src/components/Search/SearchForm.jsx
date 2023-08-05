@@ -7,8 +7,9 @@ import { useState, useEffect } from 'react';
 import styled from "styled-components";
 import { Slide } from "react-awesome-reveal";
 import { FaSearch  } from "react-icons/fa"
-
-const countries = ['Country 1', 'Country 2', 'Country 3', 'Country 4']; // Здесь добавьте список стран
+import Tours from './Tours'
+const countries = ['Астана',"Алматы"]; // Здесь добавьте список стран
+const countries2 = ['Италия', 'Египет', 'Турция', 'Тайланд', 'Сейшелы',"Греция"]; // Здесь добавьте список стран
 
 const SearchForm = () => {
 
@@ -17,6 +18,7 @@ const SearchForm = () => {
   const [country2, setCountry2] = useState('');
   const [selectedDate, setSelectedDate] = useState(null);
   const [textValue, setTextValue] = useState('');
+  const [pressBS, setPressBS] = useState(false);
 
   const handleCountry1Change = (event) => {
     setCountry1(event.target.value);
@@ -24,6 +26,7 @@ const SearchForm = () => {
 
   const handleCountry2Change = (event) => {
     setCountry2(event.target.value);
+    console.log(event.target.value)
   };
 
   const handleDateChange = (date) => {
@@ -48,6 +51,7 @@ const SearchForm = () => {
     };
   }, []);
   return (
+    <>
     <Container id="home">
       <FormContainer>
 
@@ -59,12 +63,9 @@ const SearchForm = () => {
             onChange={handleCountry1Change}
             displayEmpty
             >
-            <MenuItem value="">
-                <em>Bali, Indonesia</em>
-                </MenuItem>
               {countries.map((country, index) => (
                 <MenuItem key={index} value={country}>
-                  {country}
+                 <em>{country}</em>
                 </MenuItem>
               ))}
             </Select>
@@ -79,13 +80,10 @@ const SearchForm = () => {
             onChange={handleCountry2Change}  
             displayEmpty
             >
-                <MenuItem value="">
-                <em>Bali, Indonesia</em>
-                </MenuItem>
-                {countries.map((country, index) => (
+                {countries2.map((country, index) => (
                 
                 <MenuItem key={index} value={country}>
-                  {country}
+                  <em>{country}</em>
                 </MenuItem>
             ))}
           </Select>
@@ -108,7 +106,7 @@ const SearchForm = () => {
         onChange={handleTextChange}
       /></Pole>
 
-      <Button variant="contained" className="button">
+      <Button variant="contained" className="button" onClick={() => setPressBS(true)}>
       {isLargeScreen ? (
         <>
           <FaSearch />
@@ -119,10 +117,13 @@ const SearchForm = () => {
         </>
       )}
       </Button>
-
+        
       </FormContainer>
-      
     </Container>
+    {pressBS==true ?(
+      <Tours country2={country2} setPressBS={setPressBS}/>
+    ): null}
+    </>
   );
 };
 
