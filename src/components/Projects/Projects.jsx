@@ -5,7 +5,7 @@ import { Zoom } from 'react-awesome-reveal';
 
 const Projects = () => {
   return (
-    <Container id='project'>
+    <Container id='discont'>
         <Zoom>
             <h1><span className="red">Горячие</span> туры</h1>
         </Zoom>
