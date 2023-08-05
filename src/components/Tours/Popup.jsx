@@ -106,7 +106,7 @@ const Popup = (props) => {
                 <h3>Выберите предпочитаемый способ связи </h3>
                 <IconsColumn>
                   <a href="https://wa.me/77717488201"><FaWhatsapp size={40} color="green"/></a>
-                  <a href="https://www.instagram.com/emerson_brand_/"><FaTelegramPlane size={40} color="blue"/></a>
+                  <a href="https://web.telegram.org/k/#@by_emerson_travel" ><FaTelegramPlane size={40} color="blue"/></a>
                   </IconsColumn>
               </ChooseButton>)
                 }
