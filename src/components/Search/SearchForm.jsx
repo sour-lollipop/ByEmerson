@@ -147,7 +147,7 @@ const Container = styled.div`
     height:190px;
     margin-top: -12%;
     justify-content:center;
-    margin-bottom:10%;
+    margin-bottom:5%;
     
   }
 
