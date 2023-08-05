@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <Container id='discont'>
         <Zoom>
-            <h1><span className="red">Горячие</span> туры</h1>
+            <h1><span className="red">Горящие</span> туры</h1>
         </Zoom>
         <Slide>
             <SliderComp/>
