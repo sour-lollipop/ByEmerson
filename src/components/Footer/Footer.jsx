@@ -34,14 +34,14 @@ function PartnersGallery() {
               </span>
 
               <span>
-                <a href="/">
-                  <FaTelegramPlane />@By_Emerson
+                <a href="https://web.telegram.org/k/#@by_emerson_travel">
+                  <FaTelegramPlane />@by_emerson_travel
                 </a>
               </span>
 
               <span>
-                <a  href="https://www.instagram.com/emerson_brand_/">
-                  <FaInstagram/>@By_Emerson
+                <a  href="https://www.instagram.com/tour_emerson/">
+                  <FaInstagram/>@tour_emerson
                 </a>
               </span>
           <a>Адрес: ул Шашкина 24</a>
