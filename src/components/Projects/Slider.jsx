@@ -58,6 +58,7 @@ const data = [
   },
 ]
 
+
 var settings = {
     className: "center",
     centerMode: true,
