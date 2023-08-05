@@ -215,7 +215,7 @@ const toursData = [
 },
 {
   image: "https://apigate-tui.fstravel.com/api/geocontent/static/Hotel/00170000-ac11-0242-e359-08d99481a5ce/MainPhoto-Source-irjnkdxf.jpg",
-  location: 'Италия,Милан',
+  location: 'Италия',
   rating: '4.9',
   duration: '7-дневный тур',
   price: '809 999 ₸',
