@@ -278,19 +278,7 @@ const toursData = [
     name:'AGON HOTEL',
     description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
-  {
-    image: "https://static.gotur.kz/img/h/big/102/20365_1_9194c9ec.jpg",
-    location: 'Турция, Белек',
-    rating: '5',
-    duration: '10-дневный тур',
-    price: '9 999 758 ₸',
-    category:'Popular',
-    image2: "https://static.gotur.kz/img/h/big/102/20365_3_d572dc7d.jpg",
-    image3: "https://static.gotur.kz/img/h/big/102/20365_1_091b7bee.jpg",
-    image4: "https://static.gotur.kz/img/h/big/102/20365_3_ba1a96ff.jpg",
-    name:'CLUB PRIVE',
-    description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
-  },
+
   {
     image: "https://static.gotur.kz/img/h/big/424/84726_5_ac11639d.jpg",
     location: 'Турция, Белек',
@@ -395,19 +383,7 @@ const toursData = [
     name:'Savoy Resorts',
     description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
   },
-  {
-    image: "https://navigosha.com/pic/place/dolmabahce-palace.jpg",
-    location: 'Турция',
-    rating: '4.9',
-    duration: '4-дневный тур',
-    price: '120 000 ₸',
-    category:'Popular',
-    image2: "https://planetofhotels.com/guide/sites/default/files/styles/paragraph__hero_banner__hb_image__1880bp/public/hero_banner/Suleymaniye-Mosque.jpg",
-    image3: "https://upload.wikimedia.org/wikipedia/commons/2/2b/S%C3%BCleymaniye_Camii.jpg",
-    image4: "https://kidpassage.com/images/activity/golubaya-mechet/cover_original.jpg",
-    name:'Выходные в Стамбуле',
-    description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
-  },
+
     {
     image: "https://static.gotur.kz/img/h/big/23/44921.jpg",
     location: 'Турция, Кемер',
