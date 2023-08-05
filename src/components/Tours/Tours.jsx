@@ -43,7 +43,8 @@ function Tours() {
       <Categories chooseCategory={chooseCategory}/>
 
         <Bloks>
-            {toursData.slice(0, visibleCards).map((tour, index)=>(
+{/*             {toursData.slice(0, visibleCards).map((tour, index)=>( */}
+            {toursData.map((tour, index)=>(
               tour.category === stateCategory ? 
                 (<Card key={index}
                   name={tour.name}
@@ -57,7 +58,7 @@ function Tours() {
 
              ))}
         </Bloks>
-        <ButtonBlock>
+{/*         <ButtonBlock>
             {showAll && (
                 <button
                   onClick={handleClose}
@@ -73,7 +74,7 @@ function Tours() {
                   Посмотреть все
                 </button>
             )}
-        </ButtonBlock>
+        </ButtonBlock> */}
         {selectedTourIndex !== null && (
           <Popup 
           onClose={closePopup}  
