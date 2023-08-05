@@ -275,7 +275,7 @@ const toursData = [
     price: '2 226 110 тг',
     category:'The best price',
     image2: "https://kompastour.com/useruploads/hotels/hotel_1085faf13f.jpg",
-    image3: "https://kompastour.com/useruploads/hotels/hotel_cbccd305fd.jpgg",
+    image3: "https://kompastour.com/useruploads/hotels/hotel_b60c8fca53.jpg",
     image4: "https://kompastour.com/useruploads/hotels/hotel_1b6a86df3f.jpg",
     name:'Amari Raaya',
     description:'Мы являемся крупнейшим поставщиком праздничных услуг в мире с партнерами и местами, разбросанными по всему миру, уделяя приоритетное внимание обслуживанию и удовлетворенности клиентов.',
