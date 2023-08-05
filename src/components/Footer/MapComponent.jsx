@@ -2,8 +2,8 @@ import React from 'react';
 
 const MapComponent = () => {
   return (
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.6839142779345!2d76.83778067605544!3d43.23708637112493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x388369c3a9797295%3A0x86f0e38fa9f0096a!2z0YPQu9C40YbQsCDQodCw0LjQvdCwIDIzLCDQkNC70LzQsNGC0Ys!5e0!3m2!1sru!2skz!4v1690102028509!5m2!1sru!2skz"
+    <iframe       
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d611.2015601977788!2d76.93328115798322!3d43.22247141935904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836f24c3efee89%3A0xbd6f46a21c2e903f!2z0YPQuy4g0JfQtdC40L3QsCDQqNCw0YjQutC40L3QsCAyNCwg0JDQu9C80LDRgtGLIDA1MDA0NA!5e0!3m2!1sru!2skz!4v1691239081163!5m2!1sru!2skz" 
       width="300"
       height="250"
       // title="Google Map of Location" // Add a unique and meaningful title here
