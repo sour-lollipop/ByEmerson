@@ -9,7 +9,7 @@ import MapComponent from "./MapComponent";
 
 function PartnersGallery() {
   return (
-    <Container className='container5' id="GalleryOfPartners">
+    <Container className='container5' id="footer">
       <Wrapper>
 
       <Bline/>
