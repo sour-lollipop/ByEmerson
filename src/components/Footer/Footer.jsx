@@ -28,7 +28,7 @@ function PartnersGallery() {
               </span>
 
               <span>
-                <a href="wa.me/77717488201">
+                <a href="https://wa.me/77717488201">
                   <FaWhatsapp/> +7 771 748 82 01
                 </a>
               </span>
