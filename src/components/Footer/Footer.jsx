@@ -44,7 +44,7 @@ function PartnersGallery() {
                   <FaInstagram/>@By_Emerson
                 </a>
               </span>
-          <a>Адрес: ул. Саина 23</a>
+          <a>Адрес: ул Шашкина 24</a>
 
         </Blok>
         </Informs>
