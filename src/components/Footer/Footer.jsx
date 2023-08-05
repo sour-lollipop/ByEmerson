@@ -85,7 +85,6 @@ background-color:#F4EAE5;
   @media (max-width: 840px) {
     width: 100%;
     // height:300px;
-    margin-bottom: 25%;
     h4{
       text-align: center;
       font-size:14px;
