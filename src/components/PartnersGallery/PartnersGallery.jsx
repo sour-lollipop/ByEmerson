@@ -18,14 +18,10 @@ function PartnersGallery() {
       </Slide>
       <Slide direction="down">
         <Bloks>
-          <img src={promoImg1} alt="Фотография 1" className="photo-1" />
-          <img src={promoImg2} alt="Фотография 2" className="photo-2" />
-          <img src={promoImg3} alt="Фотография 3" className="photo-3" />
-          <img src={promoImg4} alt="Фотография 4" className="photo-4" />
-          <img src={promoImg5} alt="Фотография 5" className="photo-5" />
-          <img src={promoImg6} alt="Фотография 6" className="photo-6" />
-          <img src={promoImg7} alt="Фотография 7" className="photo-7" />
-          <img src={promoImg8} alt="Фотография 8" className="photo-8" />
+          <img src="https://kompastour.com/img/logo.svg" alt="Фотография 1" className="photo-1" />
+          <img src="https://fstravel.kz/storage/images/logo.svg" alt="Фотография 2" className="photo-2" />
+          <img src="https://calypsotour.com/assets/basetheme-design/images/logo.png" alt="Фотография 3" className="photo-3" />
+          <img src="https://www.gotur.kz/img/gt-logo-white.png" alt="Фотография 4" className="photo4" />
       
         </Bloks>
       </Slide>
@@ -70,7 +66,7 @@ flex: 1;
 width: 100%;
 background-color:white;
 display: grid;
-grid-template-columns: auto auto auto auto;
+grid-template-columns: 25% 25% 25% 25%;
 align-items: center;
 justify-items: center;
 margin-top:20px;
@@ -78,6 +74,9 @@ img{
   margin: 20px 0 ;
   max-width: 100%;
   height: auto;
+}
+.photo4{
+  background: #FC7158;
 }
 @media (max-width: 840px) {
   img{
