@@ -144,7 +144,7 @@ const Container = styled.div`
     margin: 0;
     gap: 0;
     width: 100%;
-    height:190px;
+    height:80px;
     margin-top: -12%;
     justify-content:center;
     margin-bottom:5%;
