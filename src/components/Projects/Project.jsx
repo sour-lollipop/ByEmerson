@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const Project = (props) => {
-  const { img, disc } = props.item;
+  const { image, name,price } = props.item;
   return (
-   <Container className="project">
+    <Container className="project">
       <img src={image} alt="project" />
       <div className="sale">
         <p>Скидка 35%</p>
@@ -32,8 +32,8 @@ const Container = styled.div`
   position: relative;
   overflow: hidden;
   img {
-    width: 100%;
-    height: 100%;
+    width: 150%;
+    height: 150%;
     object-fit: cover;
     transition: transform 400ms ease-in-out;
   }
