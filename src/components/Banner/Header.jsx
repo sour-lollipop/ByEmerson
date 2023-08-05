@@ -23,8 +23,8 @@ const Header = () => {
                 <span><a href="#footer" onClick={() => setBar(false)} >КОНТАКТЫ</a></span>
                  <span >
                 <a href="https://wa.me/77717488201" ><img src={logoImg1} alt='WhatsApp' style={{marginRight: '10px'}}/></a>
-                <a href="#"><img src={logoImg2} alt='Telegram' style={{marginRight: '10px'}}/></a>
-                <a href="https://www.instagram.com/emerson_brand_/"><img src={logoImg3} alt='Instagram' /></a>
+                <a href="https://web.telegram.org/k/#@by_emerson_travel" ><img src={logoImg2} alt='Telegram' style={{marginRight: '10px'}}/></a>
+                <a href="https://www.instagram.com/tour_emerson/" ><img src={logoImg3} alt='Instagram' /></a>
             </span>
             <span><a href="#" className='lang'>RU</a></span>
             </Nav>
