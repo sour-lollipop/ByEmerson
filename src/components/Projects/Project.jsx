@@ -103,4 +103,12 @@ const Container = styled.div`
   :hover > img {
     transform: scale(1.3);
   }
+  @media (max-width: 840px) {
+    .sale{
+      top: -3px;
+    }
+    .disc{
+      bottom: -20px;
+    }
+  }
 `;
