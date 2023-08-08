@@ -40,7 +40,7 @@ function Tours() {
       <h1><span className="red">Лучшее место</span> для отдыха</h1>
       {/* <List/> */}
       </Slide>
-      <Categories chooseCategory={chooseCategory}/>
+{/*       <Categories chooseCategory={chooseCategory}/> */}
 
         <Bloks>
 {/*             {toursData.slice(0, visibleCards).map((tour, index)=>( */}
