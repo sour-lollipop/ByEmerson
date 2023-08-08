@@ -3,7 +3,9 @@ import styled from "styled-components";
 import "@fontsource/source-sans-pro"; // Defaults to weight 400
 import "@fontsource/source-sans-pro/400.css"; // Specify weight
 import "@fontsource/montserrat/400.css";
-import "@fontsource/lato/400.css";
+import "@fontsource/lato"; // Defaults to weight 400
+import "@fontsource/lato/400.css"; // Specify weight
+import "@fontsource/lato/400-italic.css"; // Specify weight and style
 import ExampleImage from "./../../images/TourInfo/photo_5240157656910515385_x.jpg";
 import ExampleImage1 from "./../../images/TourInfo/photo_5240025633910802575_y.jpg";
 import ExampleImage2 from "./../../images/TourInfo/photo_5240025633910802574_y.jpg";
@@ -11,8 +13,8 @@ import ExampleImage3 from "./../../images/TourInfo/photo_5240157656910515385_x.j
 import geoicon from "./../../images/popup/geo-icon.svg";
 import staricon from "./../../images/popup/star-icon.svg";
 import closeicon from "./../../images/popup/close-icon.svg";
-import { FaWhatsapp, FaInstagram, FaTelegramPlane   } from "react-icons/fa"
-
+import { FaWhatsapp, FaInstagram, FaTelegramPlane, FaStar   } from "react-icons/fa";
+import {LuClock8}from "react-icons/lu"
 const Popup = (props) => {
   const { image, location, rating, duration, price, onClick, onClose, name,image2,image3,image4,category,description } = props;
   const [currentImage, setCurrentImage] = useState(image);
@@ -87,10 +89,34 @@ const Popup = (props) => {
                 {location}
               </GeoLocationName>
               <Rating>
-                <img src={staricon} alt="star" />
-                {rating}
+                {rating==="5" ? (
+                <div>
+                  <FaStar size={12} color="#FFCA00"/>
+                  <FaStar size={12} color="#FFCA00"/>
+                  <FaStar size={12} color="#FFCA00"/>
+                  <FaStar size={12} color="#FFCA00"/>
+                  <FaStar size={12} color="#FFCA00"/>
+                </div>
+                ):rating==="4" ? (
+                  <div>
+                    <FaStar size={12} color="#FFCA00"/>
+                    <FaStar size={12} color="#FFCA00"/>
+                    <FaStar size={12} color="#FFCA00"/>
+                    <FaStar size={12} color="#FFCA00"/>
+                    <FaStar size={12} color="grey"/>
+                  </div>
+                  ):rating==="3" ? (
+                    <div>
+                      <FaStar size={12} color="#FFCA00"/>
+                      <FaStar size={12} color="#FFCA00"/>
+                      <FaStar size={12} color="#FFCA00"/>
+                      <FaStar size={12} color="grey"/>
+                      <FaStar size={12} color="grey"/>
+                    </div>
+                    ):null}
+                  <p>{rating}</p>
               </Rating>
-              <Duration>Длительность: {duration}</Duration>
+              <Duration><LuClock8 size={15}/> <p>{duration}</p></Duration>
               <Description>
                 <h3>ОПИСАНИЕ</h3>
                 {description}
@@ -222,49 +248,62 @@ const Wrapper = styled.div`
 const LocationName = styled.p`
   color: "#222";
   font-family: "Montserrat";
-  font-size: "28.8px";
-  font-style: "normal";
-  font-weight: 400;
-  line-height: "130%";
+  font-size: 28px;
+  font-style: regular;
+  // font-weight: 400;
+  line-height: 130%;
   margin-bottom: "0";
-  margin-top: "48px";
+  // margin-top: "48px";
 `;
 
 const GeoLocationName = styled.p`
   // width: 158.4px;
-  height: 24.8px;
+  height: 25px;
   color: #ff0303;
   font-family: "Lato";
-  font-size: 16px;
+  font-style: regular;
+  font-size: 18px;
   font-weight: 400;
   line-height: 130%;
 `;
 
-const Rating = styled.p`
-	color: #444,
-	font-family: "Lato",
-	font-size: 14.4px,
-	font-style: normal,
-	font-weight: 500,
-	line-height: 100%,
+const Rating = styled.div`
+  display:grid;
+  width:80px;
+  grid-template-columns:80% 20%;
+  align-items: center;
+  justify-content: center;
+	p{
+    margin-left:4px;
+    color: #444,
+    font-family: "Lato",
+    font-size: 14.4px,
+    font-style: normal,
+    font-weight: 500,
+    line-height: 100%,}
 	img { 
 		width: 12.5px;
 		height: 11.25px;
 	}
 `;
 
-const Duration = styled.p`
+const Duration = styled.div`
+  display:flex;
+  align-items: center;
+  p{
   color: #000;
   font-family: "Source Sans Pro";
-  font-size: "14.4px";
-  font-style: "normal";
+  font-size: 14.4px;
+  font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin-top: 4px;
-
+  margin-left: 7px;
+}
 `;
 
 const Description = styled.p`
+  // background-color:red;
+  height:100px;
 	width: 336px;
 	color: #666;
 	font-family: "Lato";
