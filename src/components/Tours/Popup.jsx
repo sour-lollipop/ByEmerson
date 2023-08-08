@@ -190,8 +190,11 @@ const Container = styled.div`
   display: flex;
   @media (max-width: 840px) {
     width: 100%;
-    height: 100%;
+    // height: 100%;
     flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
   }
 `;
 const ImageContent = styled.div`
@@ -298,7 +301,10 @@ const Duration = styled.div`
   font-weight: 600;
   line-height: normal;
   margin-left: 7px;
-}
+  }
+  @media (max-width: 840px){
+    margin-top: 5px;
+  }
 `;
 
 const Description = styled.p`
@@ -324,7 +330,7 @@ const Description = styled.p`
 	}
   @media (max-width: 840px) { 
     width: 250px;
-    margin-top:  0;
+    margin-top: 10px;
 
 	}
 `;
