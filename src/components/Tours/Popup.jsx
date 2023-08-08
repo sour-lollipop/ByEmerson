@@ -190,7 +190,8 @@ const Container = styled.div`
   display: flex;
   @media (max-width: 840px) {
     width: 100%;
-    // height: 100%;
+  background: #FFF;
+  height: 100%;
     flex-direction: column;
     align-self: center;
     justify-content: center;
