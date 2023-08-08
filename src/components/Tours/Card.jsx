@@ -68,6 +68,7 @@ const Container = styled.div`
         color: #222;
         margin-bottom:10px;
         padding: 0 10px;
+        height:30px;
 
       }
       @media (max-width: 840px) {
