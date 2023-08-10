@@ -368,6 +368,9 @@ const ChooseButton = styled.div`
 	line-height: 100%;
 	cursor: pointer;
   border:none;
+  @media (max-width: 840px) { 
+    margin-top: 34px;
+	}
 `
 const IconsColumn = styled.div`
 margin-top:10px;

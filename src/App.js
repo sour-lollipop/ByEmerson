@@ -8,6 +8,7 @@ import SearchForm from './components/Search/SearchForm'
 import PartnersGallery from './components/PartnersGallery/PartnersGallery'
 import Introduct from "./components/Introduct/Introduct";
 import Tours from "./components/Tours/Tours";
+import { Analytics } from '@vercel/analytics/react';
 function App() {
   return (
     <>
@@ -22,10 +23,10 @@ function App() {
         <Tours />
         <Introduct />
         <PartnersGallery />
-        {/* <LightColor>
-      </LightColor> */}
       </Container>
       <Footer />
+      <Analytics />
+
     </>
   );
 }
