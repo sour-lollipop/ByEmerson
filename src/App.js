@@ -15,10 +15,6 @@ function App() {
       
 
       <Container>
-        // <Closed>
-            // <h2>Сайт в данный момент закрыт</h2>
-            // <h2> The site is currently closed </h2>
-        // </Closed>
         <Banner>
           <Header />
           <ProfComponent />
